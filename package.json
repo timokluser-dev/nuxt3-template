@@ -6,10 +6,14 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "openapi:generate": "npx @openapitools/openapi-generator-cli generate -i https://petstore3.swagger.io/api/v3/openapi.yaml -g typescript-fetch -o api/"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.7.0"
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@openapitools/openapi-generator-cli": "^2.7.0",
+    "nuxt": "^3.7.0",
+    "sass": "^1.66.1"
   }
 }

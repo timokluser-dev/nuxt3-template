@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button {
+  @apply text-black dark:text-white;
+}
+
+h1 {
+  @apply text-4xl;
+  @apply mb-4;
+}
+
+a {
+  &:hover {
+    @apply underline;
+  }
+}
+
+button {
+  &:hover {
+    @apply font-semibold;
+  }
+}
